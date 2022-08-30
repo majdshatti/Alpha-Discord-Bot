@@ -1,0 +1,19 @@
+{
+  "name": "alpha-discord-bot",
+  "version": "1.0.0",
+  "description": "This bot gives a discord user the ability to fetch a specifed league profile informations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/majdshatti/Alpha-Discord-Bot.git"
+  },
+  "author": "Majd Al-Shatti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/majdshatti/Alpha-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/majdshatti/Alpha-Discord-Bot#readme"
+}
