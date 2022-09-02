@@ -24,7 +24,7 @@ client.on("interactionCreate", async interaction => {
   if (interaction.commandName === "greeting") {
     const input = interaction.options.getString("input");
     if (input === "on") {
-      cronJob = cron.schedule("*/4 * * * * *", async () => {
+      cronJob = cron.schedule("00 00 09 * * *", async () => {
         try {
           let message = await client.channels.fetch(interaction.channel.id);
           message.send("Good morning fellows, Have a wonderful day! :>");
