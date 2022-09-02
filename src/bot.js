@@ -23,7 +23,7 @@ client.on("interactionCreate", async interaction => {
   //* /activate daily greetings
   if (interaction.commandName === "greeting") {
     const input = interaction.options.getString("input");
-    if (input === "on")
+    if (input === "on") {
       cronJob = cron.schedule("*/4 * * * * *", async () => {
         try {
           let message = await client.channels.fetch(interaction.channel.id);
@@ -32,15 +32,11 @@ client.on("interactionCreate", async interaction => {
           console.log(e.message);
         }
       });
-    else {
+      await interaction.reply("Daily greeting activated Wahoooo! :D");
+    } else {
       if (cronJob) cronJob.stop();
+      await interaction.reply("Daily greeting switched of :<");
     }
-
-    await interaction.reply("Daily greeting activated Wahoooo! :D");
-  }
-
-  if (interaction.commandName === "off") {
-    await interaction.reply("Daily greeting switched of :<");
   }
 
   //* /quote command
