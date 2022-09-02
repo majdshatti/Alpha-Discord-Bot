@@ -5,8 +5,15 @@ const commands = [];
 
 commands.push(
   new SlashCommandBuilder()
-    .setName("activate")
+    .setName("greeting")
     .setDescription("Ativates daily morning greetings")
+    .addStringOption(option =>
+      option
+        .setName("input")
+        .setDescription("Just test")
+        .setRequired(true)
+        .addChoices({ name: "on", value: "on" }, { name: "off", value: "off" })
+    )
 );
 
 commands.push(
