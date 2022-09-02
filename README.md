@@ -4,7 +4,7 @@ A simple bot that greets discord members every morning. In addition gives the us
 
 ### Installation Guide
 
-- Add the bot, [link](https://github.com/majdshatti/TaScheduler-api.git).
+- Alpha discord bot [link](https://github.com/majdshatti/TaScheduler-api.git).
 - Login to discord on browser.
 - Select a server and hit continue.
 
